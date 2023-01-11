@@ -1,6 +1,14 @@
 "use client";
 import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
+import Navbar from "./Navbar";
+// import { Rubik_Vinyl } from '@next/font/google';
+import '@fontsource/rubik-vinyl';
+import '@fontsource/rokkitt';
+// import '@fontsource/indie-flower';
+
+import theme from './theme';
+
 export default function RootLayout({
   children,
 }: {
@@ -14,7 +22,10 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <ChakraProvider>{children}</ChakraProvider>
+        <ChakraProvider theme={theme}>
+          <Navbar />
+          {children}
+        </ChakraProvider>
       </body>
     </html>
   );
