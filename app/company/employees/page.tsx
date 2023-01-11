@@ -10,9 +10,13 @@ import {
   Td,
   Heading,
   Center,
+  Button,
+  useDisclosure,
 } from "@chakra-ui/react";
+import AddEmployeeModal from "./AddEmployeeModal";
 
 export default function Page() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const dataEmployee = [
     {
       id: 1,
@@ -63,6 +67,10 @@ export default function Page() {
           ))}
         </Table>
       </TableContainer>
+      <Button onClick={onOpen} m={4}>
+        {"Add employee"}
+      </Button>
+      <AddEmployeeModal onClose={onClose} isOpen={isOpen} />
     </Box>
   );
 }
