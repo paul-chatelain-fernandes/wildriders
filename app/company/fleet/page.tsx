@@ -26,7 +26,7 @@ export default function Page() {
 
   return (
     <>
-      <Heading>Company fleet manager</Heading>
+      <Heading fontFamily="myFont2">Company fleet manager</Heading>
       <Flex justifyContent="right" pr="20px">
         <Button
           rightIcon={<AddIcon />}
@@ -49,7 +49,7 @@ export default function Page() {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Fiat 500</Heading>
+                <Text fontSize="xl">Fiat 500</Text>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -60,7 +60,7 @@ export default function Page() {
                     <Text>500km</Text>
                     <Text>$98,98/day</Text>
                   </Box>
-                  <Button>Buy</Button>
+                  <Button boxShadow="md">Buy</Button>
                 </Flex>
               </Stack>
             </CardBody>
@@ -76,7 +76,7 @@ export default function Page() {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Fiat 500</Heading>
+                <Text fontSize="xl">Fiat 500</Text>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -87,7 +87,7 @@ export default function Page() {
                     <Text>500km</Text>
                     <Text>$98,98/day</Text>
                   </Box>
-                  <Button>Buy</Button>
+                  <Button boxShadow="md">Buy</Button>
                 </Flex>
               </Stack>
             </CardBody>
@@ -103,7 +103,7 @@ export default function Page() {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Fiat 500</Heading>
+                <Text fontSize="xl">Fiat 500</Text>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -114,7 +114,7 @@ export default function Page() {
                     <Text>500km</Text>
                     <Text>$98,98/day</Text>
                   </Box>
-                  <Button>Buy</Button>
+                  <Button boxShadow="md">Buy</Button>
                 </Flex>
               </Stack>
             </CardBody>
@@ -130,7 +130,7 @@ export default function Page() {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Fiat 500</Heading>
+                <Text fontSize="xl">Fiat 500</Text>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -141,7 +141,7 @@ export default function Page() {
                     <Text>500km</Text>
                     <Text>$98,98/day</Text>
                   </Box>
-                  <Button>Buy</Button>
+                  <Button boxShadow="md">Buy</Button>
                 </Flex>
               </Stack>
             </CardBody>
@@ -157,7 +157,7 @@ export default function Page() {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Fiat 500</Heading>
+                <Text fontSize="xl">Fiat 500</Text>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -168,7 +168,7 @@ export default function Page() {
                     <Text>500km</Text>
                     <Text>$98,98/day</Text>
                   </Box>
-                  <Button>Buy</Button>
+                  <Button boxShadow="md">Buy</Button>
                 </Flex>
               </Stack>
             </CardBody>
@@ -184,7 +184,7 @@ export default function Page() {
                 borderRadius="lg"
               />
               <Stack mt="6" spacing="3">
-                <Heading size="md">Fiat 500</Heading>
+                <Text fontSize="xl">Fiat 500</Text>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -195,7 +195,7 @@ export default function Page() {
                     <Text>500km</Text>
                     <Text>$98,98/day</Text>
                   </Box>
-                  <Button>Buy</Button>
+                  <Button boxShadow="md">Buy</Button>
                 </Flex>
               </Stack>
             </CardBody>
