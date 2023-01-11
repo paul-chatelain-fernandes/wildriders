@@ -18,32 +18,37 @@ import {
   Wrap,
   WrapItem,
   Spacer,
+  Link,
 } from "@chakra-ui/react";
-import { Rubik_Vinyl } from '@next/font/google'
 
 const Navbar = () => {
-
-    return (
+  return (
     <Box bg="lightsalmon" w="100%" p={4} color="white" mb="20px">
       <Flex justifyContent="space-between">
         <Box>
+            <Link href="/home">
           <HStack>
-            <Box boxSize="60px">
-              <Image src="/rent_car.png" />
-            </Box>
-            <Heading fontFamily="myFont1">{"WildRiders"}</Heading>
+              <Box boxSize="60px">
+                <Image src="/rent_car.png" />
+              </Box>
+              <Heading fontFamily="myFont1">{"WildRiders"}</Heading>
           </HStack>
+            </Link>
         </Box>
         <Spacer />
         <Box>
-          <Button boxShadow="md" bg="white" color="lightsalmon" mr="30px">
-            {"Log in"}
-            <Image boxSize="30px" ml="10px" src="/login.png" />
-          </Button>
-          <Button boxShadow="md" bg="white" color="lightsalmon">
-            {"Sign up"}
-            <Image boxSize="30px" ml="10px" src="/signup.png" />
-          </Button>
+          <Link href="/login">
+            <Button boxShadow="md" bg="white" color="lightsalmon" mr="30px">
+              {"Log in"}
+              <Image boxSize="30px" ml="10px" src="/login.png" />
+            </Button>
+          </Link>
+          <Link href="/signup-user">
+            <Button boxShadow="md" bg="white" color="lightsalmon">
+              {"Sign up"}
+              <Image boxSize="30px" ml="10px" src="/signup.png" />
+            </Button>
+          </Link>
         </Box>
       </Flex>
     </Box>
