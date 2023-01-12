@@ -6,6 +6,7 @@ import '@fontsource/rubik-vinyl/400.css';
 import '@fontsource/rokkitt/400.css';
 // import '@fontsource/indie-flower';
 import theme from './theme';
+import Footer from "./Footer";
 
 export default function RootLayout({
   children,
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body>
         <ChakraProvider theme={theme}>
           {children}
+          <Footer/>
         </ChakraProvider>
       </body>
     </html>
