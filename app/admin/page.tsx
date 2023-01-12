@@ -14,11 +14,12 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import ModalDeleteCompany from "./ModalDeleteCompany";
+import { useState } from "react";
 
 export default function Page() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const dataCompanies = [
+  const [dataCompanies, setDataCompanies] = useState([
     {
       id: 1,
       name: "Amazon",
@@ -49,7 +50,7 @@ export default function Page() {
       name: "Wild Code School",
       email: "email@wcs.fr",
     },
-  ];
+  ]);
 
   return (
     <>
