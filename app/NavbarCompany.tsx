@@ -27,7 +27,7 @@ const NavbarCompany = () => {
         </Box>
         <Spacer />
         <Center>
-          <Link href="/home-company" mr="20px">
+          <Link href="/company/dashboard" mr="20px">
             Dashboard
           </Link>
           <Link href="/company/employees" mr="20px">
