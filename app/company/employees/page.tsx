@@ -18,6 +18,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import AddEmployeeModal from "./AddEmployeeModal";
+import NavbarUser from "../../NavbarUser";
 
 export default function Page() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -58,6 +59,7 @@ export default function Page() {
 
   return (
     <Box>
+      <NavbarUser />
       <Container maxW="1500px">
         <Center mt="10">
           <Heading fontFamily="myFont2">{"Company employees"}</Heading>
