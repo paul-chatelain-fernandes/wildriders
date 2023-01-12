@@ -29,7 +29,7 @@ const Navbar = () => {
             <Link href="/home">
           <HStack>
               <Box boxSize="60px">
-                <Image src="/rent_car.png" />
+                <Image src="/rent_car.png" alt="logo"/>
               </Box>
               <Heading fontFamily="myFont1">{"WildRiders"}</Heading>
           </HStack>
@@ -40,13 +40,13 @@ const Navbar = () => {
           <Link href="/login">
             <Button boxShadow="md" bg="white" color="pink.600" mr="30px">
               {"Log in"}
-              <Image boxSize="30px" ml="10px" src="/login.png" />
+              <Image boxSize="30px" ml="10px" src="/login.png" alt="login"/>
             </Button>
           </Link>
           <Link href="/signup-user">
             <Button boxShadow="md" bg="white" color="pink.600">
               {"Sign up"}
-              <Image boxSize="30px" ml="10px" src="/signup.png" />
+              <Image boxSize="30px" ml="10px" src="/signup.png" alt="logout"/>
             </Button>
           </Link>
         </Box>
