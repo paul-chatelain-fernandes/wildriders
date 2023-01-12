@@ -21,6 +21,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import NavbarLogin from "../NavbarLogin";
 
 export default function Page() {
   const [data, setData] = useState([
@@ -77,6 +78,10 @@ export default function Page() {
 
   return (
     <Box>
+      <NavbarLogin />
+      <Heading fontFamily="myFont2" mb="20px">
+        Copyright
+      </Heading>
       <Wrap justifyContent="space-between">
         {data.map((data) => (
           <WrapItem>
