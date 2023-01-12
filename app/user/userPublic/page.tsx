@@ -18,38 +18,28 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
-import ModalResources from "./ModalAddVehicle";
 import { AddIcon } from "@chakra-ui/icons";
 import { useState } from "react";
+import ModalResources from "./ModalReserveVehicle";
 export default function Page() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
-      <Heading fontFamily="myFont2">Company fleet manager</Heading>
-      <Flex justifyContent="right" pr="20px">
-        <Button
-          rightIcon={<AddIcon />}
-          colorScheme="teal"
-          variant="outline"
-          onClick={onOpen}
-          boxShadow="md"
-        >
-          Add vehicles
-        </Button>
-      </Flex>
-
-      <Wrap justifyContent="space-evenly">
+    <Flex justifyContent={'center'}>
+      <Heading>Users List of cars to reserve</Heading></Flex>
+      <Wrap justifyContent="space-evenly" justify={'start'}>
         <WrapItem>
-          <Card maxW="sm">
+          <Card marginLeft={'1.5m'}maxW="md">
             <CardBody>
               <Image
-                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                 alt="Green double couch with wooden legs"
                 borderRadius="lg"
+                onClick={onOpen}
               />
               <Stack mt="6" spacing="3">
-                <Text fontSize="xl">Fiat 500</Text>
+                <Heading size="md">Fiat 500</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -59,8 +49,9 @@ export default function Page() {
                   <Box>
                     <Text>500km</Text>
                     <Text>$98,98/day</Text>
+                   
                   </Box>
-                  <Button boxShadow="md">Buy</Button>
+                  
                 </Flex>
               </Stack>
             </CardBody>
@@ -68,15 +59,16 @@ export default function Page() {
         </WrapItem>
 
         <WrapItem>
-          <Card maxW="sm">
+          <Card marginLeft={'1.5rem'}maxW="md">
             <CardBody>
               <Image
-                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                 alt="Green double couch with wooden legs"
                 borderRadius="lg"
+                onClick={onOpen}
               />
               <Stack mt="6" spacing="3">
-                <Text fontSize="xl">Fiat 500</Text>
+                <Heading size="md">Fiat 500</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -87,7 +79,7 @@ export default function Page() {
                     <Text>500km</Text>
                     <Text>$98,98/day</Text>
                   </Box>
-                  <Button boxShadow="md">Buy</Button>
+                  
                 </Flex>
               </Stack>
             </CardBody>
@@ -95,15 +87,16 @@ export default function Page() {
         </WrapItem>
 
         <WrapItem>
-          <Card maxW="sm">
+          <Card marginLeft={'1.5rem'}maxW="md">
             <CardBody>
               <Image
-                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                 alt="Green double couch with wooden legs"
                 borderRadius="lg"
+                onClick={onOpen}
               />
               <Stack mt="6" spacing="3">
-                <Text fontSize="xl">Fiat 500</Text>
+                <Heading size="md">Fiat 500</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -114,7 +107,7 @@ export default function Page() {
                     <Text>500km</Text>
                     <Text>$98,98/day</Text>
                   </Box>
-                  <Button boxShadow="md">Buy</Button>
+                  
                 </Flex>
               </Stack>
             </CardBody>
@@ -122,15 +115,16 @@ export default function Page() {
         </WrapItem>
 
         <WrapItem>
-          <Card maxW="sm">
+          <Card marginLeft={'1.5rem'}maxW="md">
             <CardBody>
               <Image
-                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                 alt="Green double couch with wooden legs"
                 borderRadius="lg"
+                onClick={onOpen}
               />
               <Stack mt="6" spacing="3">
-                <Text fontSize="xl">Fiat 500</Text>
+                <Heading size="md">Fiat 500</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -141,7 +135,7 @@ export default function Page() {
                     <Text>500km</Text>
                     <Text>$98,98/day</Text>
                   </Box>
-                  <Button boxShadow="md">Buy</Button>
+                  
                 </Flex>
               </Stack>
             </CardBody>
@@ -149,15 +143,16 @@ export default function Page() {
         </WrapItem>
 
         <WrapItem>
-          <Card maxW="sm">
+          <Card marginLeft={'1.5rem'}maxW="md">
             <CardBody>
               <Image
-                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                 alt="Green double couch with wooden legs"
                 borderRadius="lg"
+                onClick={onOpen}
               />
               <Stack mt="6" spacing="3">
-                <Text fontSize="xl">Fiat 500</Text>
+                <Heading size="md">Fiat 500</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -168,7 +163,7 @@ export default function Page() {
                     <Text>500km</Text>
                     <Text>$98,98/day</Text>
                   </Box>
-                  <Button boxShadow="md">Buy</Button>
+                  
                 </Flex>
               </Stack>
             </CardBody>
@@ -176,15 +171,16 @@ export default function Page() {
         </WrapItem>
 
         <WrapItem>
-          <Card maxW="sm">
+          <Card marginLeft={'1.5rem'}maxW="md">
             <CardBody>
               <Image
-                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
                 alt="Green double couch with wooden legs"
                 borderRadius="lg"
+                onClick={onOpen}
               />
               <Stack mt="6" spacing="3">
-                <Text fontSize="xl">Fiat 500</Text>
+                <Heading size="md">Fiat 500</Heading>
                 <Text>
                   This sofa is perfect for modern tropical spaces, baroque
                   inspired spaces, earthy toned spaces and for people who love a
@@ -195,7 +191,7 @@ export default function Page() {
                     <Text>500km</Text>
                     <Text>$98,98/day</Text>
                   </Box>
-                  <Button boxShadow="md">Buy</Button>
+                  
                 </Flex>
               </Stack>
             </CardBody>

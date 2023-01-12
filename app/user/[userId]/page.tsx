@@ -1,3 +1,3 @@
 export default function Page() {
-  return <h1>User profile</h1>;
+  return <h1>UserId</h1>;
 }
