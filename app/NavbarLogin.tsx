@@ -39,7 +39,13 @@ const Navbar = () => {
         <Spacer />
         <Box>
           <Link href="/login">
-            <Button boxShadow="md" bg="white" color="pink.600" mr="30px">
+            <Button
+              boxShadow="md"
+              bg="white"
+              color="pink.600"
+              mr="30px"
+              h="3rem"
+            >
               {"Log in"}
               <Image boxSize="30px" ml="10px" src="/login.png" />
             </Button>
