@@ -17,8 +17,8 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import NavbarCompany from "../../NavbarCompany";
 import AddEmployeeModal from "./AddEmployeeModal";
+import NavbarCompany from "../../NavbarCompany";
 
 export default function Page() {
   const { isOpen, onOpen, onClose } = useDisclosure();

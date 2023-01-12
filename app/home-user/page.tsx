@@ -21,14 +21,11 @@ import {
 import { AddIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import ModalResources from "./ModalReserveVehicle";
-import NavbarUser from "../NavbarUser";
-
 export default function Page() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
-    <NavbarUser />
     <Flex justifyContent={'center'}>
       <Heading>Users List of cars to reserve</Heading></Flex>
       <Wrap justifyContent="space-evenly" justify={'start'}>

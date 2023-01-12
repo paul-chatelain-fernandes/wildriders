@@ -15,6 +15,7 @@ import {
 } from "@chakra-ui/react";
 import ModalDeleteCompany from "./ModalDeleteCompany";
 import { useState } from "react";
+import NavbarAdmin from "../NavbarAdmin";
 
 export default function Page() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -54,6 +55,7 @@ export default function Page() {
 
   return (
     <>
+      <NavbarAdmin />
       <Heading fontFamily="myFont2">{"Company list"}</Heading>
       <TableContainer mt="10">
         <Table>
@@ -64,17 +66,31 @@ export default function Page() {
               <Th>{"Actions"}</Th>
             </Tr>
           </Thead>
-          {dataCompanies.map((company) => (
-            <Tbody key={company.id}>
-              <Tr>
+          <Tbody>
+            {dataCompanies.map((company) => (
+              <Tr key={company.id}>
                 <Td>{company.name}</Td>
                 <Td>{company.email}</Td>
                 <Td>
-                  <Button value={company.name} onClick={onOpen} color="pink.600">Delete</Button>
+                  <Button
+                    value={company.name}
+                    onClick={onOpen}
+                    color="pink.600"
+                    m="5"
+                  >
+                    Delete
+                  </Button>
+                  <Button
+                    value={company.name}
+                    onClick={onOpen}
+                    color="yellow.600"
+                  >
+                    Edit
+                  </Button>
                 </Td>
               </Tr>
-            </Tbody>
-          ))}
+            ))}
+          </Tbody>
         </Table>
       </TableContainer>
       <ModalDeleteCompany onClose={onClose} isOpen={isOpen} companyName />
