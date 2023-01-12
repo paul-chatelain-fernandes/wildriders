@@ -32,16 +32,13 @@ function Signup() {
     <Stack h="100vh">
       <Flex justifyContent="center" alignItems="center">
         <Stack>
-          <Heading margin={"5px"} marginBottom={"5rem"}>
-            Sign up for an account
+          <Heading fontFamily="myFont2" margin={"5px"} marginBottom={"5rem"}>
+            {"Sign up for an account"}
           </Heading>
           <FormControl>
-            <FormLabel  htmlFor="username">Username</FormLabel>
+            <FormLabel htmlFor="username">{"Username"}</FormLabel>
             <Input
-              rounded={"8px"}
-              border={"1px solid #000000"}
-              backgroundColor={"#fff"}
-              borderColor={"black"}
+              border={"1px solid gray"}
               height={"50px"}
               maxWidth={{ base: "22rem", md: "24rem", lg: "40rem" }}
               id="username"
@@ -49,12 +46,11 @@ function Signup() {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
-            <FormLabel marginTop={'1rem'}htmlFor="email">Email</FormLabel>
+            <FormLabel marginTop={"1rem"} htmlFor="email">
+              {"Email"}
+            </FormLabel>
             <Input
-              rounded={"8px"}
-              border={"1px solid #000000"}
-              backgroundColor={"#fff"}
-              borderColor={"black"}
+              border={"1px solid gray"}
               height={"50px"}
               maxWidth={{ base: "22rem", md: "24rem", lg: "40rem" }}
               id="email"
@@ -62,38 +58,35 @@ function Signup() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <FormLabel marginTop={'1rem'} htmlFor="password">Password</FormLabel>
+            <FormLabel marginTop={"1rem"} htmlFor="password">
+              {"Password"}
+            </FormLabel>
             <Input
-              rounded={"8px"}
-              border={"1px solid #000000"}
-              backgroundColor={"#fff"}
-              borderColor={"black"}
+              border={"1px solid gray"}
               height={"50px"}
               maxWidth={{ base: "22rem", md: "24rem", lg: "40rem" }}
               id="password"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              marginBottom={'4rem'}
+              marginBottom={"4rem"}
             />
           </FormControl>
           <Button
-            mt={4}
+            margin={"5px"}
+            marginTop={"5rem"}
             type={"submit"}
-            backgroundColor={"#394E61"}
+            backgroundColor={"lightsalmon"}
             textColor={"#fff"}
-            variant={"outline"}
             alignSelf={"center"}
-            boxShadow={"0 4px 4px rgba(0, 0, 0, 0.25)"}
+            boxShadow="md"
             onClick={handleSubmit}
-            marginBottom={"4rem"}
           >
-            Create your account
+            {"Create your account"}
           </Button>
-            <Link alignSelf={'center'} as={NextLink} href="/signup-company">
-            Do you want to register as a company?
-            </Link>
-          
+          <Link alignSelf={"center"} as={NextLink} href="/signup-company">
+            {"Do you want to register as a company?"}
+          </Link>
         </Stack>
       </Flex>
     </Stack>

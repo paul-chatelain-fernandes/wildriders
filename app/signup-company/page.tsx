@@ -15,46 +15,42 @@ import { useState } from "react";
 import NextLink from "next/link";
 
 function Signup() {
-  const [username, setUsername] = useState("");
+  const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [selectedPage, setSelectedPage] = useState("signup");
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    console.log("username: ", username);
+    console.log("company: ", company);
     console.log("email: ", email);
     console.log("password: ", password);
     console.log("form submitted!");
   };
 
   return (
-    <Stack h="100vh">
+    <Stack>
       <Flex justifyContent="center" alignItems="center">
         <Stack>
-          <Heading margin={"5px"} marginBottom={"5rem"}>
-            Sign up for an account
+          <Heading fontFamily="myFont2" margin={"5px"} marginBottom={"5rem"}>
+            {"Sign up for an account - Company"}
           </Heading>
           <FormControl>
-            <FormLabel  htmlFor="username">Username</FormLabel>
+            <FormLabel htmlFor="company">{"Company"}</FormLabel>
             <Input
-              rounded={"8px"}
-              border={"1px solid #000000"}
-              backgroundColor={"#fff"}
-              borderColor={"black"}
+              border={"1px solid gray"}
               height={"50px"}
               maxWidth={{ base: "22rem", md: "24rem", lg: "40rem" }}
-              id="username"
+              id="company"
               type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              value={company}
+              onChange={(e) => setCompany(e.target.value)}
             />
-            <FormLabel marginTop={'1rem'}htmlFor="email">Email</FormLabel>
+            <FormLabel marginTop={"1rem"} htmlFor="email">
+              {"Email"}
+            </FormLabel>
             <Input
-              rounded={"8px"}
-              border={"1px solid #000000"}
-              backgroundColor={"#fff"}
-              borderColor={"black"}
+              border={"1px solid gray"}
               height={"50px"}
               maxWidth={{ base: "22rem", md: "24rem", lg: "40rem" }}
               id="email"
@@ -62,39 +58,35 @@ function Signup() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <FormLabel marginTop={'1rem'} htmlFor="password">Password</FormLabel>
+            <FormLabel marginTop={"1rem"} htmlFor="password">
+              Password
+            </FormLabel>
             <Input
-              rounded={"8px"}
-              border={"1px solid #000000"}
-              backgroundColor={"#fff"}
-              borderColor={"black"}
+              border={"1px solid gray"}
               height={"50px"}
               maxWidth={{ base: "22rem", md: "24rem", lg: "40rem" }}
               id="password"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              marginBottom={'4rem'}
+              marginBottom={"4rem"}
             />
           </FormControl>
           <Button
-            mt={4}
+          margin={"5px"} marginTop={"5rem"}
             type={"submit"}
-            backgroundColor={"#394E61"}
+            backgroundColor={"lightsalmon"}
             textColor={"#fff"}
-            variant={"outline"}
             alignSelf={"center"}
-            boxShadow={"0 4px 4px rgba(0, 0, 0, 0.25)"}
+            boxShadow="md"
             onClick={handleSubmit}
-            marginBottom={"4rem"}
           >
-            Create your account
+            {"Create your account"}
           </Button>
-          
-            <Link alignSelf={'center'} as={NextLink} href="/signup-user">
-            Do you want to register as a client
-            </Link>
-          
+
+          <Link alignSelf={"center"} as={NextLink} href="/signup-user">
+            {"Do you want to register as a client ?"}
+          </Link>
         </Stack>
       </Flex>
     </Stack>
