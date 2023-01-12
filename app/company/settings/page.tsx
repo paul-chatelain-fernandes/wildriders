@@ -1,3 +1,10 @@
+import NavbarCompany from "../../NavbarCompany";
+
 export default function Page() {
-  return <h1>Company settings</h1>;
+  return (
+    <>
+      <NavbarCompany />
+      <h1>Company settings</h1>
+    </>
+  );
 }
