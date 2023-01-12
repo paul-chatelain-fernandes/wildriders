@@ -12,6 +12,7 @@ import {
   Center,
   Button,
   useDisclosure,
+  Container,
 } from "@chakra-ui/react";
 import ModalDeleteCompany from "./ModalDeleteCompany";
 import { useState } from "react";
@@ -55,6 +56,7 @@ export default function Page() {
   return (
     <>
       <Heading fontFamily="myFont2">{"Company list"}</Heading>
+      <Container maxW="1500px">
       <TableContainer mt="10">
         <Table>
           <Thead>
@@ -77,6 +79,7 @@ export default function Page() {
           ))}
         </Table>
       </TableContainer>
+      </Container>
       <ModalDeleteCompany onClose={onClose} isOpen={isOpen} companyName />
     </>
   );
