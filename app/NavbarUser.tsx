@@ -13,7 +13,7 @@ import {
 
 const NavbarUser = () => {
   return (
-    <Box bg="lightsalmon" w="100%" p={4} color="white" mb="20px">
+    <Box  bg="lightsalmon" w="100%" p={4} color="white" mb="20px">
       <Flex justifyContent="space-between">
         <Box>
           <Link href="/user/rent">
@@ -29,6 +29,9 @@ const NavbarUser = () => {
         <Center>
           <Link href="/user/rent" mr="20px">
             Rent
+          </Link>
+          <Link href="/user/pastrents" mr="20px">
+            Past Rents
           </Link>
           <Link href="/user/settings">Settings</Link>
         </Center>
