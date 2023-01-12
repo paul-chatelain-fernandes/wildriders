@@ -22,7 +22,6 @@ export default function RootLayout({
       <head />
       <body>
         <ChakraProvider theme={theme}>
-          <Navbar />
           {children}
         </ChakraProvider>
       </body>

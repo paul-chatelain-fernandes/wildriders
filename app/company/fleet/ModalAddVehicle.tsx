@@ -23,6 +23,7 @@ import {
   RadioGroup,
   Stack,
   Text,
+  Spacer,
 } from "@chakra-ui/react";
 import { useState } from "react";
 
@@ -54,6 +55,7 @@ function ModalResources({
                       <Stack direction="row">
                         <Radio value="1">{'Public'}</Radio>
                         <Radio value="2">{'Private'}</Radio>
+                        <Radio value="2">{'Both'}</Radio>
                       </Stack>
                     </HStack>
                   </RadioGroup>
@@ -61,17 +63,18 @@ function ModalResources({
               </Box>
               <Box>
                 <FormControl>
-                  <FormLabel>{'Model'}</FormLabel>
-                  <Input type="model" />
+                <FormLabel>{'Make'}</FormLabel>
+                  <Input type="make" placeholder="Citroën" />
                   
-                  <FormLabel>{'Kilometers'}</FormLabel>
-                  <Input type="kilometers" />
+                  <FormLabel>{'Model'}</FormLabel>
+                  <Input type="model" placeholder="C4"/>
+
+                  <FormLabel>{'Fueltype'}</FormLabel>
+                  <Input type="fueltype" placeholder="Gazole" />
 
                   <FormLabel>{'Price per day'}</FormLabel>
                   <Input type="price_per_day" />
 
-                  <FormLabel>{'Address'}</FormLabel>
-                  <Input type="address" />
                 </FormControl>
               </Box>
             </HStack>
