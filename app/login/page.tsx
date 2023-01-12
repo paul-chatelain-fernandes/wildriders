@@ -39,16 +39,14 @@ function Login() {
       <Stack h="100vh">
         <Center>
           <VStack>
-            <Heading margin={"5px"} marginTop={"12rem"} marginBottom={"5rem"}>
-              Log in to your account
+            <Heading fontFamily="myFont2" margin={"5px"} marginBottom={"5rem"}>
+              {"Log in to your account"}
             </Heading>
             <FormControl>
-              <FormLabel htmlFor="username">Username</FormLabel>
+              <FormLabel htmlFor="username">{"Username"}</FormLabel>
               <Input
-                rounded={"8px"}
-                border={"1px solid #000000"}
-                backgroundColor={"#fff"}
-                borderColor={"black"}
+                placeholder="jDoe"
+                border={"1px solid gray"}
                 height={"50px"}
                 maxWidth={{ base: "18rem", md: "24rem", lg: "40rem" }}
                 id="username"
@@ -56,32 +54,30 @@ function Login() {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
-              <FormLabel htmlFor="password">Password</FormLabel>
+              <FormLabel htmlFor="password">{"Password"}</FormLabel>
               <Input
-                rounded={"8px"}
-                border={"1px solid #000000"}
-                backgroundColor={"#fff"}
-                borderColor={"black"}
+                placeholder="**********"
+                border={"1px solid gray"}
                 height={"50px"}
                 maxWidth={{ base: "18rem", md: "24rem", lg: "40rem" }}
                 id="password"
                 type="password"
+                marginBottom={"4rem"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </FormControl>
             <Button
-              mt={4}
+              margin={"5px"}
+              marginTop={"5rem"}
               rightIcon={<AiOutlineEnter size={"20px"} />}
-              marginTop={"2rem"}
               type={"submit"}
-              backgroundColor={"#394E61"}
+              backgroundColor={"pink.600"}
               textColor={"#fff"}
-              variant={"outline"}
               alignSelf={"center"}
-              boxShadow={"0 4px 4px rgba(0, 0, 0, 0.25)"}
+              boxShadow="md"
             >
-              Login
+              {"Login"}
             </Button>
           </VStack>
         </Center>

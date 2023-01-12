@@ -20,7 +20,7 @@ export default function AddEmployeeModal({ onClose, isOpen, push }: any) {
     <Modal onClose={onClose} size="xl" isOpen={isOpen}>
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader textAlign="center">Add a new employee</ModalHeader>
+        <ModalHeader textAlign="center" fontFamily="myFont2">{'Add a new employee'}</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <FormLabel mb="0.3rem">{"Name"}</FormLabel>

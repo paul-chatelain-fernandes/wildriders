@@ -26,16 +26,17 @@ export default function Page() {
 
   return (
     <>
-      <Heading fontFamily="myFont2">Company fleet manager</Heading>
+      <Heading fontFamily="myFont2">{'Company fleet manager'}</Heading>
       <Flex justifyContent="right" pr="20px">
         <Button
           rightIcon={<AddIcon />}
-          colorScheme="teal"
+          backgroundColor="pink.600"
+          color="white"
           variant="outline"
           onClick={onOpen}
           boxShadow="md"
         >
-          Add vehicles
+          {'Add vehicles'}
         </Button>
       </Flex>
 

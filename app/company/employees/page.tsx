@@ -14,6 +14,7 @@ import {
   useDisclosure,
   Container,
   Switch,
+  Flex
 } from "@chakra-ui/react";
 import { useState } from "react";
 import AddEmployeeModal from "./AddEmployeeModal";
@@ -49,7 +50,7 @@ export default function Page() {
 
   function push(value: any) {
     setDataEmployee((prev) => {
-      const newPrev = [...prev]
+      const newPrev = [...prev];
       newPrev.push(value);
       return newPrev;
     });
@@ -59,34 +60,36 @@ export default function Page() {
     <Box>
       <Container maxW="1500px">
         <Center mt="10">
-          <Heading>Company employees</Heading>
+          <Heading fontFamily="myFont2">{"Company employees"}</Heading>
         </Center>
-        <Button onClick={onOpen} m={4} bgColor="blue.400" mt="10">
+        <Flex justifyContent="right">
+        <Button onClick={onOpen} m={4} bgColor="pink.600" color="white" mt="10">
           {"Add employee"}
         </Button>
+        </Flex>
         <TableContainer mt="10">
           <Table>
             <Thead>
               <Tr>
-                <Th>Username</Th>
-                <Th>E-mail</Th>
-                <Th>Access</Th>
+                <Th>{"Username"}</Th>
+                <Th>{"Email"}</Th>
+                <Th>{"Access"}</Th>
               </Tr>
             </Thead>
-            <Tbody >
+            <Tbody>
               {dataEmployee.map((dataEmployee) => (
                 <Tr key={dataEmployee.email}>
                   <Td>{dataEmployee.username}</Td>
                   <Td>{dataEmployee.email}</Td>
                   <Td>
-                    <Switch></Switch>
+                    <Switch colorScheme="pink"></Switch>
                   </Td>
                 </Tr>
               ))}
             </Tbody>
           </Table>
         </TableContainer>
-        <AddEmployeeModal onClose={onClose} isOpen={isOpen} push={push} />
+        <AddEmployeeModal onClose={onClose} isOpen={isOpen} />
       </Container>
     </Box>
   );
