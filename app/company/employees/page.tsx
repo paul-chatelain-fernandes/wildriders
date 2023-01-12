@@ -12,12 +12,15 @@ import {
   Center,
   Button,
   useDisclosure,
+  Container,
+  Switch,
 } from "@chakra-ui/react";
+import { useState } from "react";
 import AddEmployeeModal from "./AddEmployeeModal";
 
 export default function Page() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const dataEmployee = [
+  const [dataEmployee, setDataEmployee] = useState([
     {
       id: 1,
       username: "Kylian",
@@ -42,35 +45,49 @@ export default function Page() {
       email: "nonojose@gmail.com",
       password: "azerty",
     },
-  ];
+  ]);
+
+  function push(value: any) {
+    setDataEmployee((prev) => {
+      const newPrev = [...prev]
+      newPrev.push(value);
+      return newPrev;
+    });
+  }
 
   return (
     <Box>
-      <Center mt="10">
-        <Heading>Company employees</Heading>
-      </Center>
-      <TableContainer mt="10">
-        <Table>
-          <Thead>
-            <Tr>
-              <Th>Username</Th>
-              <Th>E-mail</Th>
-            </Tr>
-          </Thead>
-          {dataEmployee.map((dataEmployee) => (
-            <Tbody key={dataEmployee.id}>
+      <Container maxW="1500px">
+        <Center mt="10">
+          <Heading>Company employees</Heading>
+        </Center>
+        <Button onClick={onOpen} m={4} bgColor="blue.400" mt="10">
+          {"Add employee"}
+        </Button>
+        <TableContainer mt="10">
+          <Table>
+            <Thead>
               <Tr>
-                <Td>{dataEmployee.username}</Td>
-                <Td>{dataEmployee.email}</Td>
+                <Th>Username</Th>
+                <Th>E-mail</Th>
+                <Th>Access</Th>
               </Tr>
+            </Thead>
+            <Tbody >
+              {dataEmployee.map((dataEmployee) => (
+                <Tr key={dataEmployee.email}>
+                  <Td>{dataEmployee.username}</Td>
+                  <Td>{dataEmployee.email}</Td>
+                  <Td>
+                    <Switch></Switch>
+                  </Td>
+                </Tr>
+              ))}
             </Tbody>
-          ))}
-        </Table>
-      </TableContainer>
-      <Button onClick={onOpen} m={4}>
-        {"Add employee"}
-      </Button>
-      <AddEmployeeModal onClose={onClose} isOpen={isOpen} />
+          </Table>
+        </TableContainer>
+        <AddEmployeeModal onClose={onClose} isOpen={isOpen} push={push} />
+      </Container>
     </Box>
   );
 }
