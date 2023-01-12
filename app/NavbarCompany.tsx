@@ -11,7 +11,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 
-const NavbarUser = () => {
+const NavbarCompany = () => {
   return (
     <Box bg="lightsalmon" w="100%" p={4} color="white" mb="20px">
       <Flex justifyContent="space-between">
@@ -49,4 +49,4 @@ const NavbarUser = () => {
   );
 };
 
-export default NavbarUser;
+export default NavbarCompany;

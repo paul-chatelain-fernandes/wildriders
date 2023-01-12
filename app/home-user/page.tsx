@@ -23,6 +23,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import ModalResources from "./ModalReserveVehicle";
+import NavbarUser from "../NavbarUser";
 
 interface Item {
   id: number;
@@ -110,6 +111,7 @@ const YourComponent = () => {
 
   return (
     <>
+    <NavbarUser />
       <Flex justifyContent={"center"}>
         <Heading>Users List of cars to reserve</Heading>
       </Flex>
