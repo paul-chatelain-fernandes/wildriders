@@ -21,8 +21,8 @@ function Login() {
     event.preventDefault();
     if (username === "user" && password === "password") {
       window.location.href = "/home-user";
-    } else if (username === "organization" && password === "password") {
-      window.location.href = "/home-organization";
+    } else if (username === "company" && password === "password") {
+      window.location.href = "/home-company";
     } else {
       alert("Incorrect username or password.");
     }
