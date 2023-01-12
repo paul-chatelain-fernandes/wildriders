@@ -1,10 +1,14 @@
+"use client";
+import { Box } from "@chakra-ui/react";
+import Footer from "../../Footer";
 import NavbarUser from "../../NavbarUser";
 
 export default function Page() {
   return (
     <>
       <NavbarUser />
-      <h1>User settings</h1>
+      <Box minH="80vh">Settings</Box>
+      <Footer />
     </>
   );
 }

@@ -23,6 +23,7 @@ import ModalResources from "./ModalAddVehicle";
 import { AddIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import NavbarCompany from "../../NavbarCompany";
+import Footer from "../../Footer";
 export default function Page() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [dataCars, setDataCars] = useState([
@@ -142,6 +143,7 @@ export default function Page() {
         ))}
       </Wrap>
       <ModalResources isOpen={isOpen} onClose={onClose} />
+      <Footer />
     </>
   );
 }

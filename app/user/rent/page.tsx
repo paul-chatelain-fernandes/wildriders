@@ -24,6 +24,7 @@ import {
 } from "@chakra-ui/react";
 import ModalResources from "./ModalReserveVehicle";
 import NavbarUser from "../../NavbarUser";
+import Footer from "../../Footer";
 
 interface Item {
   id: number;
@@ -145,6 +146,7 @@ const YourComponent = () => {
         onClose={onClose}
         selectedItem={selectedItem}
       />
+      <Footer />
     </>
   );
 };

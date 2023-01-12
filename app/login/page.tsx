@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { AiOutlineEnter } from "react-icons/ai";
+import Footer from "../Footer";
 import NavbarLogin from "../NavbarLogin";
 
 function Login() {
@@ -86,6 +87,7 @@ function Login() {
           </Center>
         </Stack>
       </form>
+      <Footer />
     </>
   );
 }

@@ -21,6 +21,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import Footer from "../Footer";
 import NavbarLogin from "../NavbarLogin";
 
 export default function Page() {
@@ -77,36 +78,43 @@ export default function Page() {
   ]);
 
   return (
-    <Box>
+    <>
       <NavbarLogin />
-      <Heading fontFamily="myFont2" mb="20px">
-        Copyright
-      </Heading>
-      <Wrap justifyContent="space-between">
-        {data.map((data) => (
-          <WrapItem>
-            <Card maxW="sm" key={data.id}>
-              <CardBody>
-                <Center>
-                  <Image src={data.image} borderRadius="lg" height="200px" />
-                </Center>
-                <Stack mt="6" spacing="3">
-                  <Link
-                    key={data.id}
-                    href={data.lien}
-                    title={data.title}
-                    isExternal
-                  >
-                    <Text fontSize="2xl" fontFamily="myFont2" color="pink.600">
-                      {data.text}
-                    </Text>
-                  </Link>
-                </Stack>
-              </CardBody>
-            </Card>
-          </WrapItem>
-        ))}
-      </Wrap>
-    </Box>
+      <Box>
+        <Heading fontFamily="myFont2" mb="20px">
+          Copyright
+        </Heading>
+        <Wrap justifyContent="space-between">
+          {data.map((data) => (
+            <WrapItem>
+              <Card maxW="sm" key={data.id}>
+                <CardBody>
+                  <Center>
+                    <Image src={data.image} borderRadius="lg" height="200px" />
+                  </Center>
+                  <Stack mt="6" spacing="3">
+                    <Link
+                      key={data.id}
+                      href={data.lien}
+                      title={data.title}
+                      isExternal
+                    >
+                      <Text
+                        fontSize="2xl"
+                        fontFamily="myFont2"
+                        color="pink.600"
+                      >
+                        {data.text}
+                      </Text>
+                    </Link>
+                  </Stack>
+                </CardBody>
+              </Card>
+            </WrapItem>
+          ))}
+        </Wrap>
+      </Box>
+      <Footer />
+    </>
   );
 }
