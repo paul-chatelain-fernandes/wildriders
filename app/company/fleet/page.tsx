@@ -90,7 +90,9 @@ export default function Page() {
   return (
     <>
       <NavbarCompany />
-      <Heading fontFamily="myFont2">{"Company fleet manager"}</Heading>
+      <Center>
+        <Heading fontFamily="myFont2">{"Company fleet manager"}</Heading>
+      </Center>
       <Flex justifyContent="right" pr="20px">
         <Button
           rightIcon={<AddIcon />}
@@ -105,11 +107,11 @@ export default function Page() {
       </Flex>
       <Wrap justifyContent="space-between">
         {dataCars.map((car) => (
-          <WrapItem>
+          <WrapItem key={car.id}>
             <Card maxW="sm" key={car.id}>
               <CardBody>
                 <Center>
-                  <Image src={car.image} borderRadius="lg" height="200px" />
+                  <Image src={car.image} borderRadius="lg" height="200px" alt="Car Image"/>
                 </Center>
                 <Stack mt="6" spacing="3">
                   <Text fontSize="2xl" fontFamily="myFont2" color="pink.600">
