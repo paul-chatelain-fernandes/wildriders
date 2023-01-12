@@ -1,7 +1,6 @@
 "use client";
 import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
-import Navbar from "./Navbar";
 // import { Rubik_Vinyl } from '@next/font/google';
 import '@fontsource/rubik-vinyl/400.css';
 import '@fontsource/rokkitt/400.css';
