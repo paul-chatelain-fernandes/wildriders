@@ -16,7 +16,7 @@ const NavbarCompany = () => {
     <Box bg="lightsalmon" w="100%" p={4} color="white" mb="20px">
       <Flex justifyContent="space-between">
         <Box>
-          <Link href="/home-company">
+          <Link href="/company/dashboard">
             <HStack>
               <Box boxSize="60px">
                 <Image src="/rent_car.png" alt="logo" />
@@ -27,7 +27,7 @@ const NavbarCompany = () => {
         </Box>
         <Spacer />
         <Center>
-          <Link href="/home-company" mr="20px">
+          <Link href="/company/dashboard" mr="20px">
             Dashboard
           </Link>
           <Link href="/company/employees" mr="20px">

@@ -36,7 +36,7 @@ function Signup() {
         <Flex justifyContent="center" alignItems="center">
           <Stack>
             <Heading fontFamily="myFont2" margin={"5px"} marginBottom={"5rem"}>
-              {"Sign up for an account"}
+              {"Sign up as a user"}
             </Heading>
             <FormControl>
               <FormLabel htmlFor="username">{"Username"}</FormLabel>

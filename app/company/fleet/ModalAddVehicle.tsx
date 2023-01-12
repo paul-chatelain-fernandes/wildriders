@@ -55,7 +55,7 @@ function ModalResources({
                       <Stack direction="row">
                         <Radio value="1">{'Public'}</Radio>
                         <Radio value="2">{'Private'}</Radio>
-                        <Radio value="2">{'Both'}</Radio>
+                        <Radio value="3">{'Both'}</Radio>
                       </Stack>
                     </HStack>
                   </RadioGroup>

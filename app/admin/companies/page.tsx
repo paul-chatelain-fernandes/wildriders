@@ -57,44 +57,46 @@ export default function Page() {
   return (
     <>
       <NavbarAdmin />
-      <Heading fontFamily="myFont2">{"Company list"}</Heading>
+      <Center>
+        <Heading fontFamily="myFont2">{"Company list"}</Heading>
+      </Center>
       <Container maxW="1500px">
-      <TableContainer mt="10">
-        <Table>
-          <Thead>
-            <Tr>
-              <Th>{"Username"}</Th>
-              <Th>{"Email"}</Th>
-              <Th>{"Actions"}</Th>
-            </Tr>
-          </Thead>
-          <Tbody>
-            {dataCompanies.map((company) => (
-              <Tr key={company.id}>
-                <Td>{company.name}</Td>
-                <Td>{company.email}</Td>
-                <Td>
-                  <Button
-                    value={company.name}
-                    onClick={onOpen}
-                    color="pink.600"
-                    m="5"
-                  >
-                    Delete
-                  </Button>
-                  <Button
-                    value={company.name}
-                    onClick={onOpen}
-                    color="yellow.600"
-                  >
-                    Edit
-                  </Button>
-                </Td>
+        <TableContainer mt="10">
+          <Table>
+            <Thead>
+              <Tr>
+                <Th>{"Username"}</Th>
+                <Th>{"Email"}</Th>
+                <Th>{"Actions"}</Th>
               </Tr>
-            ))}
-          </Tbody>
-        </Table>
-      </TableContainer>
+            </Thead>
+            <Tbody>
+              {dataCompanies.map((company) => (
+                <Tr key={company.id}>
+                  <Td>{company.name}</Td>
+                  <Td>{company.email}</Td>
+                  <Td>
+                    <Button
+                      value={company.name}
+                      onClick={onOpen}
+                      color="pink.600"
+                      m="5"
+                    >
+                      Delete
+                    </Button>
+                    <Button
+                      value={company.name}
+                      onClick={onOpen}
+                      color="yellow.600"
+                    >
+                      Edit
+                    </Button>
+                  </Td>
+                </Tr>
+              ))}
+            </Tbody>
+          </Table>
+        </TableContainer>
       </Container>
       <ModalDeleteCompany onClose={onClose} isOpen={isOpen} companyName />
     </>
