@@ -25,8 +25,8 @@ const Footer = () => {
   return (
     <Box bg="lightsalmon" w="100%" p={4} color="white">
       <Flex justifyContent="center">
-          <Link href="/mentions-legales">
-            <Text>Mentions légales</Text>
+          <Link href="/legal-notices">
+            <Text>Legal Notices</Text>
           </Link>
       </Flex>
     </Box>
