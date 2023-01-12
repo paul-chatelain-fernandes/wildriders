@@ -47,14 +47,14 @@ export default function Page() {
   return (
     <Box>
       <Center mt="10">
-        <Heading>Company employees</Heading>
+        <Heading fontFamily="myFont2">{'Company employees'}</Heading>
       </Center>
       <TableContainer mt="10">
         <Table>
           <Thead>
             <Tr>
-              <Th>Username</Th>
-              <Th>E-mail</Th>
+              <Th>{'Username'}</Th>
+              <Th>{'Email'}</Th>
             </Tr>
           </Thead>
           {dataEmployee.map((dataEmployee) => (
@@ -67,7 +67,7 @@ export default function Page() {
           ))}
         </Table>
       </TableContainer>
-      <Button onClick={onOpen} m={4}>
+      <Button onClick={onOpen} m={4} colorScheme='salmon' backgroundColor="pink.600" color="white">
         {"Add employee"}
       </Button>
       <AddEmployeeModal onClose={onClose} isOpen={isOpen} />

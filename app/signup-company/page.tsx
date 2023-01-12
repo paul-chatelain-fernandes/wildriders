@@ -29,19 +29,20 @@ function Signup() {
   };
 
   return (
-    <Stack>
+    <Stack h="100vh">
       <Flex justifyContent="center" alignItems="center">
         <Stack>
           <Heading fontFamily="myFont2" margin={"5px"} marginBottom={"5rem"}>
-            {"Sign up for an account - Company"}
+            {"Sign up for an account"}
           </Heading>
           <FormControl>
             <FormLabel htmlFor="company">{"Company"}</FormLabel>
             <Input
+              placeholder="WildeRiders"
               border={"1px solid gray"}
               height={"50px"}
               maxWidth={{ base: "22rem", md: "24rem", lg: "40rem" }}
-              id="company"
+              id="username"
               type="text"
               value={company}
               onChange={(e) => setCompany(e.target.value)}
@@ -50,6 +51,7 @@ function Signup() {
               {"Email"}
             </FormLabel>
             <Input
+              placeholder="wild.riders@email.com"
               border={"1px solid gray"}
               height={"50px"}
               maxWidth={{ base: "22rem", md: "24rem", lg: "40rem" }}
@@ -59,9 +61,10 @@ function Signup() {
               onChange={(e) => setEmail(e.target.value)}
             />
             <FormLabel marginTop={"1rem"} htmlFor="password">
-              Password
+              {"Password"}
             </FormLabel>
             <Input
+              placeholder="**********"
               border={"1px solid gray"}
               height={"50px"}
               maxWidth={{ base: "22rem", md: "24rem", lg: "40rem" }}
@@ -73,9 +76,10 @@ function Signup() {
             />
           </FormControl>
           <Button
-          margin={"5px"} marginTop={"5rem"}
+            margin={"5px"}
+            marginTop={"5rem"}
             type={"submit"}
-            backgroundColor={"lightsalmon"}
+            backgroundColor={"pink.600"}
             textColor={"#fff"}
             alignSelf={"center"}
             boxShadow="md"
@@ -83,7 +87,6 @@ function Signup() {
           >
             {"Create your account"}
           </Button>
-
           <Link alignSelf={"center"} as={NextLink} href="/signup-user">
             {"Do you want to register as a client ?"}
           </Link>

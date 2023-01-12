@@ -16,7 +16,7 @@ export default function AddEmployeeModal({ onClose, isOpen }: any) {
     <Modal onClose={onClose} size="xl" isOpen={isOpen}>
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader textAlign="center">Add a new employee</ModalHeader>
+        <ModalHeader textAlign="center" fontFamily="myFont2">{'Add a new employee'}</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <FormLabel mb="0.3rem">{"Name"}</FormLabel>
@@ -27,7 +27,7 @@ export default function AddEmployeeModal({ onClose, isOpen }: any) {
           <Input _placeholder={{ color: "gray.300" }} placeholder="E-mail..." />
         </ModalBody>
         <ModalFooter>
-          <Button>Send</Button>
+          <Button>{'Send'}</Button>
         </ModalFooter>
       </ModalContent>
     </Modal>

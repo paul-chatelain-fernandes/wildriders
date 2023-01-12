@@ -38,6 +38,7 @@ function Signup() {
           <FormControl>
             <FormLabel htmlFor="username">{"Username"}</FormLabel>
             <Input
+              placeholder="jDoe"
               border={"1px solid gray"}
               height={"50px"}
               maxWidth={{ base: "22rem", md: "24rem", lg: "40rem" }}
@@ -50,6 +51,7 @@ function Signup() {
               {"Email"}
             </FormLabel>
             <Input
+              placeholder="john.doe@email.com"
               border={"1px solid gray"}
               height={"50px"}
               maxWidth={{ base: "22rem", md: "24rem", lg: "40rem" }}
@@ -62,6 +64,7 @@ function Signup() {
               {"Password"}
             </FormLabel>
             <Input
+              placeholder="**********"
               border={"1px solid gray"}
               height={"50px"}
               maxWidth={{ base: "22rem", md: "24rem", lg: "40rem" }}
@@ -76,7 +79,7 @@ function Signup() {
             margin={"5px"}
             marginTop={"5rem"}
             type={"submit"}
-            backgroundColor={"lightsalmon"}
+            backgroundColor={"pink.600"}
             textColor={"#fff"}
             alignSelf={"center"}
             boxShadow="md"

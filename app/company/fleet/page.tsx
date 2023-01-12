@@ -30,7 +30,8 @@ export default function Page() {
       <Flex justifyContent="right" pr="20px">
         <Button
           rightIcon={<AddIcon />}
-          colorScheme="teal"
+          backgroundColor="pink.600"
+          color="white"
           variant="outline"
           onClick={onOpen}
           boxShadow="md"
