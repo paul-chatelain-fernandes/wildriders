@@ -10,25 +10,19 @@ import {
   VStack,
   Center,
 } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { AiOutlineEnter } from "react-icons/ai";
 
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  useEffect(() => {
-    if (isLoggedIn) {
-      window.location.href = "/home";
-    }
-  }, [isLoggedIn]);
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    if (username === "admin" && password === "password") {
-      localStorage.setItem("isLoggedIn", "true");
-      setIsLoggedIn(true);
+    if (username === "user" && password === "password") {
+      window.location.href = "/home-user";
+    } else if (username === "organization" && password === "password") {
+      window.location.href = "/home-organization";
     } else {
       alert("Incorrect username or password.");
     }
