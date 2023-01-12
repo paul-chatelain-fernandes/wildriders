@@ -3,15 +3,15 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/login",
-        permanent: false,
-      },
-    ];
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: "/",
+  //       destination: "/login",
+  //       permanent: false,
+  //     },
+  //   ];
+  // },
   typescript: {
     ignoreBuildErrors: true,
   },
