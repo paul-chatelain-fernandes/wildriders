@@ -28,12 +28,15 @@ const NavbarUser = () => {
         <Spacer />
         <Center>
           <Link href="/home-company" mr="20px">
-            Home
+            Dashboard
           </Link>
           <Link href="/company/employees" mr="20px">
             Employees
           </Link>
-          <Link>Account settings</Link>
+          <Link href="/company/fleet" mr="20px">
+            Fleet
+          </Link>
+          <Link href="/company/settings">Settings</Link>
         </Center>
         <Spacer />
         <Box>

@@ -22,6 +22,7 @@ import {
 import ModalResources from "./ModalAddVehicle";
 import { AddIcon } from "@chakra-ui/icons";
 import { useState } from "react";
+import NavbarCompany from "../../NavbarCompany";
 export default function Page() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [dataCars, setDataCars] = useState([
@@ -88,6 +89,7 @@ export default function Page() {
   ]);
   return (
     <>
+      <NavbarCompany />
       <Heading fontFamily="myFont2">{"Company fleet manager"}</Heading>
       <Flex justifyContent="right" pr="20px">
         <Button
@@ -101,42 +103,42 @@ export default function Page() {
           {"Add vehicles"}
         </Button>
       </Flex>
-        <Wrap justifyContent="space-between">
-          {dataCars.map((car) => (
-            <WrapItem>
-              <Card maxW="sm" key={car.id}>
-                <CardBody>
-                  <Center>
-                    <Image src={car.image} borderRadius="lg" height="200px" />
-                  </Center>
-                  <Stack mt="6" spacing="3">
-                    <Text fontSize="2xl" fontFamily="myFont2" color="pink.600">
-                      {car.make} {car.model}
-                    </Text>
-                    <Text>
-                      This sofa is perfect for modern tropical spaces, baroque
-                      inspired spaces, earthy toned spaces and for people who
-                      love a chic design with a sprinkle of vintage design.
-                    </Text>
-                    <Flex justifyContent="space-between">
-                      <Box>
-                        <Text>
-                          {car.kilometers} {"km"}
-                        </Text>
-                        <Text>
-                          {car.pricePerDay} {"€/day"}
-                        </Text>
-                      </Box>
-                      <Button boxShadow="md" color="pink.600">
-                        Buy
-                      </Button>
-                    </Flex>
-                  </Stack>
-                </CardBody>
-              </Card>
-            </WrapItem>
-          ))}
-        </Wrap>
+      <Wrap justifyContent="space-between">
+        {dataCars.map((car) => (
+          <WrapItem>
+            <Card maxW="sm" key={car.id}>
+              <CardBody>
+                <Center>
+                  <Image src={car.image} borderRadius="lg" height="200px" />
+                </Center>
+                <Stack mt="6" spacing="3">
+                  <Text fontSize="2xl" fontFamily="myFont2" color="pink.600">
+                    {car.make} {car.model}
+                  </Text>
+                  <Text>
+                    This sofa is perfect for modern tropical spaces, baroque
+                    inspired spaces, earthy toned spaces and for people who love
+                    a chic design with a sprinkle of vintage design.
+                  </Text>
+                  <Flex justifyContent="space-between">
+                    <Box>
+                      <Text>
+                        {car.kilometers} {"km"}
+                      </Text>
+                      <Text>
+                        {car.pricePerDay} {"€/day"}
+                      </Text>
+                    </Box>
+                    <Button boxShadow="md" color="pink.600">
+                      Buy
+                    </Button>
+                  </Flex>
+                </Stack>
+              </CardBody>
+            </Card>
+          </WrapItem>
+        ))}
+      </Wrap>
       <ModalResources isOpen={isOpen} onClose={onClose} />
     </>
   );
