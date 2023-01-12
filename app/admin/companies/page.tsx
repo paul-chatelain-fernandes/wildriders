@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import ModalDeleteCompany from "./ModalDeleteCompany";
 import { useState } from "react";
-import NavbarAdmin from "../NavbarAdmin";
+import NavbarAdmin from "../../NavbarAdmin";
 
 export default function Page() {
   const { isOpen, onOpen, onClose } = useDisclosure();

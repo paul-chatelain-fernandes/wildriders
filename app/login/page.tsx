@@ -21,9 +21,11 @@ function Login() {
   const handleSubmit = (event: any) => {
     event.preventDefault();
     if (username === "user" && password === "password") {
-      window.location.href = "/home-user";
+      window.location.href = "/user/rent";
     } else if (username === "company" && password === "password") {
-      window.location.href = "/home-company";
+      window.location.href = "/company/dashboard";
+    } else if (username === "admin" && password === "password") {
+      window.location.href = "/admin/dashboard";
     } else {
       alert("Incorrect username or password.");
     }

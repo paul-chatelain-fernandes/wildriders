@@ -23,7 +23,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import ModalResources from "./ModalReserveVehicle";
-import NavbarUser from "../NavbarUser";
+import NavbarUser from "../../NavbarUser";
 
 interface Item {
   id: number;
@@ -99,7 +99,7 @@ const YourComponent = () => {
     address: "",
     date: "",
     price: "",
-    image: ""
+    image: "",
   });
 
   const onOpen = (item: Item) => {
@@ -111,9 +111,9 @@ const YourComponent = () => {
 
   return (
     <>
-    <NavbarUser />
+      <NavbarUser />
       <Flex justifyContent={"center"}>
-        <Heading>Users List of cars to reserve</Heading>
+        <Heading>Rent a car</Heading>
       </Flex>
       <Wrap justifyContent="space-evenly" justify={"start"}>
         {dataVehicle.map((item) => (

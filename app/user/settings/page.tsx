@@ -1,3 +1,10 @@
+import NavbarUser from "../../NavbarUser";
+
 export default function Page() {
-  return <h1>User settings</h1>;
+  return (
+    <>
+      <NavbarUser />
+      <h1>User settings</h1>
+    </>
+  );
 }
