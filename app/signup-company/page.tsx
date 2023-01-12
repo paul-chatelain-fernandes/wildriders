@@ -36,12 +36,12 @@ function Signup() {
         <Flex justifyContent="center" alignItems="center">
           <Stack>
             <Heading fontFamily="myFont2" margin={"5px"} marginBottom={"5rem"}>
-              {"Sign up for an account"}
+              {"Sign up as a company"}
             </Heading>
             <FormControl>
               <FormLabel htmlFor="company">{"Company"}</FormLabel>
               <Input
-                placeholder="WildeRiders"
+                placeholder="WildRiders"
                 border={"1px solid gray"}
                 height={"50px"}
                 maxWidth={{ base: "22rem", md: "24rem", lg: "40rem" }}

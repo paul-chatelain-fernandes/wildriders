@@ -27,7 +27,7 @@ const Navbar = () => {
     <Box bg="lightsalmon" w="100%" p={4} color="white" mb="20px">
       <Flex justifyContent="space-between">
         <Box>
-          <Link href="/home">
+          <Link href="/login">
             <HStack>
               <Box boxSize="60px">
                 <Image src="/rent_car.png" />

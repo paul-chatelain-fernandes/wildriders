@@ -16,7 +16,7 @@ const NavbarAdmin = () => {
     <Box bg="black" w="100%" p={4} color="white" mb="20px">
       <Flex justifyContent="space-between">
         <Box>
-          <Link href="/home">
+          <Link href="/admin/dashboard">
             <HStack>
               <Box boxSize="60px">
                 <Image src="/rent_car.png" alt="logo" />
