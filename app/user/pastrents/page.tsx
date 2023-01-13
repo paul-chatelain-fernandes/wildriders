@@ -15,6 +15,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import Footer from "../../Footer";
 
 interface RentedVehicle {
   id: number;
@@ -98,6 +99,7 @@ function ResourcesPage() {
           ))}
         </Flex>
       </Stack>
+      <Footer />
     </>
   );
 }

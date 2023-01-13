@@ -15,6 +15,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import Footer from "../../Footer";
 
 function ResourcesPage() {
   const [username, setUsername] = useState("");
@@ -47,12 +48,22 @@ function ResourcesPage() {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </FormControl>
+            <FormControl>
+              <FormLabel>Password</FormLabel>
+              <Input
+                placeholder="********"
+                width={"20rem"}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </FormControl>
             <Button mt={4} onClick={() => alert("Saved Changes!")}>
               Save Changes
             </Button>
           </Box>
         </Flex>
       </Stack>
+      <Footer />
     </>
   );
 }
