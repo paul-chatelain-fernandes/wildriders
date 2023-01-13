@@ -11,16 +11,6 @@ import {
   Stack,
   Text,
   Box,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalCloseButton,
-  ModalBody,
-  ModalFooter,
-  HStack,
-  VStack,
-  Button,
 } from "@chakra-ui/react";
 import ModalResources from "./ModalReserveVehicle";
 import NavbarUser from "../../NavbarUser";
