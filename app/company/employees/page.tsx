@@ -61,7 +61,7 @@ export default function Page() {
   return (
     <>
       <NavbarCompany />
-      <Box minH="80vh">
+      <Box minH="81vh">
         <Container maxW="1500px">
           <Center mt="10">
             <Heading fontFamily="myFont2">{"Company employees"}</Heading>
