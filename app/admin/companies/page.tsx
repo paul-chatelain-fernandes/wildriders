@@ -17,6 +17,7 @@ import {
 import ModalDeleteCompany from "./ModalDeleteCompany";
 import { useState } from "react";
 import NavbarAdmin from "../../NavbarAdmin";
+import FooterAdmin from "../../FooterAdmin";
 
 export default function Page() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -58,15 +59,15 @@ export default function Page() {
     <>
       <NavbarAdmin />
       <Center>
-        <Heading fontFamily="myFont2">{"Company list"}</Heading>
+        <Heading fontFamily="myFont2">{"List of all companies"}</Heading>
       </Center>
       <Container maxW="1500px">
         <TableContainer mt="10">
           <Table>
             <Thead>
               <Tr>
-                <Th>{"Username"}</Th>
-                <Th>{"Email"}</Th>
+                <Th>{"Name"}</Th>
+                <Th>{"E-mail"}</Th>
                 <Th>{"Actions"}</Th>
               </Tr>
             </Thead>
@@ -99,6 +100,7 @@ export default function Page() {
         </TableContainer>
       </Container>
       <ModalDeleteCompany onClose={onClose} isOpen={isOpen} companyName />
+      <FooterAdmin />
     </>
   );
 }

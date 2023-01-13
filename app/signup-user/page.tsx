@@ -14,6 +14,7 @@ import {
 import { useState } from "react";
 import NextLink from "next/link";
 import NavbarLogin from "../NavbarLogin";
+import Footer from "../Footer";
 
 function Signup() {
   const [username, setUsername] = useState("");
@@ -96,6 +97,7 @@ function Signup() {
           </Stack>
         </Flex>
       </Stack>
+      <Footer />
     </>
   );
 }

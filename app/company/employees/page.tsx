@@ -19,6 +19,7 @@ import {
 import { useState } from "react";
 import AddEmployeeModal from "./AddEmployeeModal";
 import NavbarCompany from "../../NavbarCompany";
+import Footer from "../../Footer";
 
 export default function Page() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -60,7 +61,7 @@ export default function Page() {
   return (
     <>
       <NavbarCompany />
-      <Box>
+      <Box minH="80vh">
         <Container maxW="1500px">
           <Center mt="10">
             <Heading fontFamily="myFont2">{"Company employees"}</Heading>
@@ -101,6 +102,7 @@ export default function Page() {
           <AddEmployeeModal onClose={onClose} isOpen={isOpen} />
         </Container>
       </Box>
+      <Footer />
     </>
   );
 }
