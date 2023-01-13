@@ -36,7 +36,7 @@ function Login() {
     <>
       <NavbarLogin />
       <form onSubmit={handleSubmit}>
-        <Stack h="100vh">
+        <Stack h="83vh">
           <Center>
             <VStack>
               <Heading

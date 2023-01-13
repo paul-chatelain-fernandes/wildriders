@@ -24,7 +24,7 @@ function ResourcesPage() {
   return (
     <>
       <NavbarUser />
-      <Stack minH={"85vh"}>
+      <Stack minH={"83vh"}>
         <Flex justifyContent={"center"}>
           <Heading p={4}>Modify your account</Heading>
         </Flex>

@@ -33,7 +33,7 @@ function Signup() {
   return (
     <>
       <NavbarLogin />
-      <Stack h="100vh">
+      <Stack h="83vh">
         <Flex justifyContent="center" alignItems="center">
           <Stack>
             <Heading fontFamily="myFont2" margin={"5px"} marginBottom={"5rem"}>
